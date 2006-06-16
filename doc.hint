@@ -1,0 +1,5 @@
+category: Libs Doc
+external-source: libidn
+sdesc: "Internationalized string handling library (API documentation)"
+ldesc: "Libidn is a package for internationalized string handling
+based on the Stringprep, Punycode and IDNA specifications."

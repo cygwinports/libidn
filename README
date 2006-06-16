@@ -1,0 +1,198 @@
+libidn
+-------------------------------------------
+Libidn is a package for internationalized string handling 
+based on the Stringprep, Punycode and IDNA specifications.
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  libiconv2-1.9.2-1
+  libintl3-0.14.5-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.19-4
+  autoconf2.5-2.59-3
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  doxygen-1.4.6-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  libtool1.5-1.5.20-2
+  make-3.80-1
+  sed-4.1.4-1
+
+Canonical homepage:
+  http://www.gnu.org/software/libidn/
+
+Canonical download:
+  ftp://alpha.gnu.org/pub/gnu/libidn/
+
+-------------------------------------------
+
+Build instructions:
+  unpack libidn-0.6.2-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  ./libidn-0.6.2-X.sh all
+
+This will create:
+  /usr/src/libidn-0.6.2-X-src.tar.bz2
+  /usr/src/libidn-0.6.2-X.tar.bz2
+  /usr/src/libidn-devel-0.6.2-X.tar.bz2
+  /usr/src/libidn-doc-0.6.2-X.tar.bz2
+  /usr/src/libidn11-0.6.2-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the main package:
+
+  /etc/postinstall/libidn.sh
+  /usr/bin/idn.exe
+  /usr/share/doc/Cygwin/libidn-0.6.2.README
+  /usr/share/doc/libidn-0.6.2/ABOUT-NLS
+  /usr/share/doc/libidn-0.6.2/AUTHORS
+  /usr/share/doc/libidn-0.6.2/ChangeLog
+  /usr/share/doc/libidn-0.6.2/COPYING
+  /usr/share/doc/libidn-0.6.2/COPYING.LIB
+  /usr/share/doc/libidn-0.6.2/FAQ
+  /usr/share/doc/libidn-0.6.2/INSTALL
+  /usr/share/doc/libidn-0.6.2/NEWS
+  /usr/share/doc/libidn-0.6.2/README
+  /usr/share/doc/libidn-0.6.2/THANKS
+  /usr/share/doc/libidn-0.6.2/TODO
+  /usr/share/emacs/site-lisp/idna.el
+  /usr/share/emacs/site-lisp/idna.elc
+  /usr/share/emacs/site-lisp/punycode.el
+  /usr/share/emacs/site-lisp/punycode.elc
+  /usr/share/info/libidn.info.gz
+  /usr/share/locale/da/LC_MESSAGES/libidn.mo
+  /usr/share/locale/de/LC_MESSAGES/libidn.mo
+  /usr/share/locale/en@boldquot/LC_MESSAGES/libidn.mo
+  /usr/share/locale/en@quot/LC_MESSAGES/libidn.mo
+  /usr/share/locale/eo/LC_MESSAGES/libidn.mo
+  /usr/share/locale/fr/LC_MESSAGES/libidn.mo
+  /usr/share/locale/it/LC_MESSAGES/libidn.mo
+  /usr/share/locale/nl/LC_MESSAGES/libidn.mo
+  /usr/share/locale/pl/LC_MESSAGES/libidn.mo
+  /usr/share/locale/ro/LC_MESSAGES/libidn.mo
+  /usr/share/locale/rw/LC_MESSAGES/libidn.mo
+  /usr/share/locale/sr/LC_MESSAGES/libidn.mo
+  /usr/share/locale/sv/LC_MESSAGES/libidn.mo
+  /usr/share/locale/vi/LC_MESSAGES/libidn.mo
+  /usr/share/locale/zh_CN/LC_MESSAGES/libidn.mo
+  /usr/share/man/man1/idn.1.gz
+
+Files included in the libidn11 package:
+
+  /usr/bin/cygidn-11.dll
+
+Files included in the devel package:
+
+  /usr/include/idn-free.h
+  /usr/include/idn-int.h
+  /usr/include/idna.h
+  /usr/include/pr29.h
+  /usr/include/punycode.h
+  /usr/include/stringprep.h
+  /usr/include/tld.h
+  /usr/lib/libidn.a
+  /usr/lib/libidn.dll.a
+  /usr/lib/libidn.la
+  /usr/lib/pkgconfig/libidn.pc
+
+Files included in the doc package:
+
+  /usr/share/doc/libidn-0.6.2/html/annotated.html
+  /usr/share/doc/libidn-0.6.2/html/dirs.html
+  /usr/share/doc/libidn-0.6.2/html/dir_000000.html
+  /usr/share/doc/libidn-0.6.2/html/doxygen.css
+  /usr/share/doc/libidn-0.6.2/html/doxygen.png
+  /usr/share/doc/libidn-0.6.2/html/files.html
+  /usr/share/doc/libidn-0.6.2/html/functions.html
+  /usr/share/doc/libidn-0.6.2/html/functions_vars.html
+  /usr/share/doc/libidn-0.6.2/html/globals.html
+  /usr/share/doc/libidn-0.6.2/html/globals_defs.html
+  /usr/share/doc/libidn-0.6.2/html/globals_enum.html
+  /usr/share/doc/libidn-0.6.2/html/globals_eval.html
+  /usr/share/doc/libidn-0.6.2/html/globals_func.html
+  /usr/share/doc/libidn-0.6.2/html/globals_type.html
+  /usr/share/doc/libidn-0.6.2/html/globals_vars.html
+  /usr/share/doc/libidn-0.6.2/html/idn-int_8h-source.html
+  /usr/share/doc/libidn-0.6.2/html/idn-int_8h.html
+  /usr/share/doc/libidn-0.6.2/html/index.html
+  /usr/share/doc/libidn-0.6.2/html/stringprep_8h-source.html
+  /usr/share/doc/libidn-0.6.2/html/stringprep_8h.html
+  /usr/share/doc/libidn-0.6.2/html/structStringprep__profiles.html
+  /usr/share/doc/libidn-0.6.2/html/structStringprep__table.html
+  /usr/share/doc/libidn-0.6.2/html/structStringprep__table__element.html
+  /usr/share/man/man3/idna_strerror.3.gz
+  /usr/share/man/man3/idna_to_ascii_4i.3.gz
+  /usr/share/man/man3/idna_to_ascii_4z.3.gz
+  /usr/share/man/man3/idna_to_ascii_8z.3.gz
+  /usr/share/man/man3/idna_to_ascii_lz.3.gz
+  /usr/share/man/man3/idna_to_unicode_44i.3.gz
+  /usr/share/man/man3/idna_to_unicode_4z4z.3.gz
+  /usr/share/man/man3/idna_to_unicode_8z4z.3.gz
+  /usr/share/man/man3/idna_to_unicode_8z8z.3.gz
+  /usr/share/man/man3/idna_to_unicode_8zlz.3.gz
+  /usr/share/man/man3/idna_to_unicode_lzlz.3.gz
+  /usr/share/man/man3/pr29_4.3.gz
+  /usr/share/man/man3/pr29_4z.3.gz
+  /usr/share/man/man3/pr29_8z.3.gz
+  /usr/share/man/man3/pr29_strerror.3.gz
+  /usr/share/man/man3/punycode_decode.3.gz
+  /usr/share/man/man3/punycode_encode.3.gz
+  /usr/share/man/man3/punycode_strerror.3.gz
+  /usr/share/man/man3/stringprep.3.gz
+  /usr/share/man/man3/stringprep_4i.3.gz
+  /usr/share/man/man3/stringprep_4zi.3.gz
+  /usr/share/man/man3/stringprep_check_version.3.gz
+  /usr/share/man/man3/stringprep_convert.3.gz
+  /usr/share/man/man3/stringprep_locale_charset.3.gz
+  /usr/share/man/man3/stringprep_locale_to_utf8.3.gz
+  /usr/share/man/man3/stringprep_profile.3.gz
+  /usr/share/man/man3/stringprep_strerror.3.gz
+  /usr/share/man/man3/stringprep_ucs4_nfkc_normalize.3.gz
+  /usr/share/man/man3/stringprep_ucs4_to_utf8.3.gz
+  /usr/share/man/man3/stringprep_unichar_to_utf8.3.gz
+  /usr/share/man/man3/stringprep_utf8_nfkc_normalize.3.gz
+  /usr/share/man/man3/stringprep_utf8_to_locale.3.gz
+  /usr/share/man/man3/stringprep_utf8_to_ucs4.3.gz
+  /usr/share/man/man3/stringprep_utf8_to_unichar.3.gz
+  /usr/share/man/man3/tld_check_4.3.gz
+  /usr/share/man/man3/tld_check_4t.3.gz
+  /usr/share/man/man3/tld_check_4tz.3.gz
+  /usr/share/man/man3/tld_check_4z.3.gz
+  /usr/share/man/man3/tld_check_8z.3.gz
+  /usr/share/man/man3/tld_check_lz.3.gz
+  /usr/share/man/man3/tld_default_table.3.gz
+  /usr/share/man/man3/tld_get_4.3.gz
+  /usr/share/man/man3/tld_get_4z.3.gz
+  /usr/share/man/man3/tld_get_table.3.gz
+  /usr/share/man/man3/tld_get_z.3.gz
+  /usr/share/man/man3/tld_strerror.3.gz
+
+------------------
+
+Port Notes:
+
+----- version 0.6.2-1 -----
+Version bump.
+
+----- version 0.6.1-1 -----
+Version bump.
+Created separate -devel and -doc packages.
+
+----- version 0.5.20-1 -----
+Version bump.
+
+----- version 0.5.19-1 -----
+Version bump.
+
+----- version 0.3.7-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
