@@ -4,22 +4,24 @@ Libidn is a package for internationalized string handling
 based on the Stringprep, Punycode and IDNA specifications.
 
 Runtime requirements:
-  cygwin-1.5.19-4
-  libiconv2-1.9.2-1
+  cygwin-1.5.20-1
+  libiconv2-1.9.2-2
   libintl3-0.14.5-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.19-4
-  autoconf2.5-2.59-3
+  cygwin-1.5.20-1
+  autoconf2.5-2.59-2
   automake1.9-1.9.6-1
   binutils-20050610-1
+  cygport-0.2.2-1
   doxygen-1.4.6-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
-  libtool1.5-1.5.20-2
+  libtool1.5-1.5.22-1
   make-3.80-1
-  sed-4.1.4-1
+  perl-5.8.7-5
+  sed-4.1.5-1
 
 Canonical homepage:
   http://www.gnu.org/software/libidn/
@@ -30,18 +32,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libidn-0.6.2-X-src.tar.bz2
+  unpack libidn-0.6.5-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  ./libidn-0.6.2-X.sh all
+  cygport ./libidn-0.6.5-X.cygport all
 
 This will create:
-  /usr/src/libidn-0.6.2-X-src.tar.bz2
-  /usr/src/libidn-0.6.2-X.tar.bz2
-  /usr/src/libidn-devel-0.6.2-X.tar.bz2
-  /usr/src/libidn-doc-0.6.2-X.tar.bz2
-  /usr/src/libidn11-0.6.2-X.tar.bz2
+  /usr/src/libidn-0.6.5-X-src.tar.bz2
+  /usr/src/libidn-0.6.5-X.tar.bz2
+  /usr/src/libidn-devel-0.6.5-X.tar.bz2
+  /usr/src/libidn-doc-0.6.5-X.tar.bz2
+  /usr/src/libidn11-0.6.5-X.tar.bz2
 
 -------------------------------------------
 
@@ -49,18 +51,18 @@ Files included in the main package:
 
   /etc/postinstall/libidn.sh
   /usr/bin/idn.exe
-  /usr/share/doc/Cygwin/libidn-0.6.2.README
-  /usr/share/doc/libidn-0.6.2/ABOUT-NLS
-  /usr/share/doc/libidn-0.6.2/AUTHORS
-  /usr/share/doc/libidn-0.6.2/ChangeLog
-  /usr/share/doc/libidn-0.6.2/COPYING
-  /usr/share/doc/libidn-0.6.2/COPYING.LIB
-  /usr/share/doc/libidn-0.6.2/FAQ
-  /usr/share/doc/libidn-0.6.2/INSTALL
-  /usr/share/doc/libidn-0.6.2/NEWS
-  /usr/share/doc/libidn-0.6.2/README
-  /usr/share/doc/libidn-0.6.2/THANKS
-  /usr/share/doc/libidn-0.6.2/TODO
+  /usr/share/doc/Cygwin/libidn-0.6.5.README
+  /usr/share/doc/libidn-0.6.5/ABOUT-NLS
+  /usr/share/doc/libidn-0.6.5/AUTHORS
+  /usr/share/doc/libidn-0.6.5/ChangeLog
+  /usr/share/doc/libidn-0.6.5/COPYING
+  /usr/share/doc/libidn-0.6.5/COPYING.LIB
+  /usr/share/doc/libidn-0.6.5/FAQ
+  /usr/share/doc/libidn-0.6.5/INSTALL
+  /usr/share/doc/libidn-0.6.5/NEWS
+  /usr/share/doc/libidn-0.6.5/README
+  /usr/share/doc/libidn-0.6.5/THANKS
+  /usr/share/doc/libidn-0.6.5/TODO
   /usr/share/emacs/site-lisp/idna.el
   /usr/share/emacs/site-lisp/idna.elc
   /usr/share/emacs/site-lisp/punycode.el
@@ -103,29 +105,29 @@ Files included in the devel package:
 
 Files included in the doc package:
 
-  /usr/share/doc/libidn-0.6.2/html/annotated.html
-  /usr/share/doc/libidn-0.6.2/html/dirs.html
-  /usr/share/doc/libidn-0.6.2/html/dir_000000.html
-  /usr/share/doc/libidn-0.6.2/html/doxygen.css
-  /usr/share/doc/libidn-0.6.2/html/doxygen.png
-  /usr/share/doc/libidn-0.6.2/html/files.html
-  /usr/share/doc/libidn-0.6.2/html/functions.html
-  /usr/share/doc/libidn-0.6.2/html/functions_vars.html
-  /usr/share/doc/libidn-0.6.2/html/globals.html
-  /usr/share/doc/libidn-0.6.2/html/globals_defs.html
-  /usr/share/doc/libidn-0.6.2/html/globals_enum.html
-  /usr/share/doc/libidn-0.6.2/html/globals_eval.html
-  /usr/share/doc/libidn-0.6.2/html/globals_func.html
-  /usr/share/doc/libidn-0.6.2/html/globals_type.html
-  /usr/share/doc/libidn-0.6.2/html/globals_vars.html
-  /usr/share/doc/libidn-0.6.2/html/idn-int_8h-source.html
-  /usr/share/doc/libidn-0.6.2/html/idn-int_8h.html
-  /usr/share/doc/libidn-0.6.2/html/index.html
-  /usr/share/doc/libidn-0.6.2/html/stringprep_8h-source.html
-  /usr/share/doc/libidn-0.6.2/html/stringprep_8h.html
-  /usr/share/doc/libidn-0.6.2/html/structStringprep__profiles.html
-  /usr/share/doc/libidn-0.6.2/html/structStringprep__table.html
-  /usr/share/doc/libidn-0.6.2/html/structStringprep__table__element.html
+  /usr/share/doc/libidn-0.6.5/html/annotated.html
+  /usr/share/doc/libidn-0.6.5/html/dirs.html
+  /usr/share/doc/libidn-0.6.5/html/dir_000000.html
+  /usr/share/doc/libidn-0.6.5/html/doxygen.css
+  /usr/share/doc/libidn-0.6.5/html/doxygen.png
+  /usr/share/doc/libidn-0.6.5/html/files.html
+  /usr/share/doc/libidn-0.6.5/html/functions.html
+  /usr/share/doc/libidn-0.6.5/html/functions_vars.html
+  /usr/share/doc/libidn-0.6.5/html/globals.html
+  /usr/share/doc/libidn-0.6.5/html/globals_defs.html
+  /usr/share/doc/libidn-0.6.5/html/globals_enum.html
+  /usr/share/doc/libidn-0.6.5/html/globals_eval.html
+  /usr/share/doc/libidn-0.6.5/html/globals_func.html
+  /usr/share/doc/libidn-0.6.5/html/globals_type.html
+  /usr/share/doc/libidn-0.6.5/html/globals_vars.html
+  /usr/share/doc/libidn-0.6.5/html/idn-int_8h-source.html
+  /usr/share/doc/libidn-0.6.5/html/idn-int_8h.html
+  /usr/share/doc/libidn-0.6.5/html/index.html
+  /usr/share/doc/libidn-0.6.5/html/stringprep_8h-source.html
+  /usr/share/doc/libidn-0.6.5/html/stringprep_8h.html
+  /usr/share/doc/libidn-0.6.5/html/structStringprep__profiles.html
+  /usr/share/doc/libidn-0.6.5/html/structStringprep__table.html
+  /usr/share/doc/libidn-0.6.5/html/structStringprep__table__element.html
   /usr/share/man/man3/idna_strerror.3.gz
   /usr/share/man/man3/idna_to_ascii_4i.3.gz
   /usr/share/man/man3/idna_to_ascii_4z.3.gz
@@ -176,6 +178,9 @@ Files included in the doc package:
 ------------------
 
 Port Notes:
+
+----- version 0.6.5-1 -----
+Version bump.
 
 ----- version 0.6.2-1 -----
 Version bump.

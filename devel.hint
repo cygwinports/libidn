@@ -1,6 +1,6 @@
 category: Libs
 requires: cygwin libiconv
 external-source: libidn
-sdesc: "Internationalized string handling runtime (development)"
+sdesc: "Internationalized domain name library (development)"
 ldesc: "Libidn is a package for internationalized string handling
 based on the Stringprep, Punycode and IDNA specifications."

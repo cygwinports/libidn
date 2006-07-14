@@ -1,5 +1,5 @@
 category: Libs Net
 requires: cygwin libintl3 libidn11
-sdesc: "Internationalized string handling library (utilities)"
+sdesc: "Internationalized domain name library (utilities)"
 ldesc: "Libidn is a package for internationalized string handling
 based on the Stringprep, Punycode and IDNA specifications."
