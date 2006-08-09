@@ -1,0 +1,6 @@
+category: Dotnet
+requires: cygwin mono
+external-source: libidn
+sdesc: "Internationalized domain name library (Mono CSharp interface)"
+ldesc: "Libidn is a package for internationalized string handling
+based on the Stringprep, Punycode and IDNA specifications."

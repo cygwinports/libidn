@@ -4,22 +4,24 @@ Libidn is a package for internationalized string handling
 based on the Stringprep, Punycode and IDNA specifications.
 
 Runtime requirements:
-  cygwin-1.5.20-1
+  cygwin-1.5.21-1
   libiconv2-1.9.2-2
   libintl3-0.14.5-1
+(libidn-sharp)
+  mono-1.1.15-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.20-1
+  cygwin-1.5.21-1
   autoconf2.5-2.59-2
   automake1.9-1.9.6-1
   binutils-20050610-1
-  cygport-0.2.2-1
+  cygport-0.2.5-1
   doxygen-1.4.6-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
   libtool1.5-1.5.22-1
-  make-3.80-1
+  make-3.81-1
   perl-5.8.7-5
   sed-4.1.5-1
 
@@ -88,6 +90,10 @@ Files included in the main package:
 Files included in the libidn11 package:
 
   /usr/bin/cygidn-11.dll
+
+Files included in the libidn-sharp package:
+
+  /usr/lib/mono/libidn/Libidn.dll
 
 Files included in the devel package:
 
@@ -178,6 +184,9 @@ Files included in the doc package:
 ------------------
 
 Port Notes:
+
+----- version 0.6.5-2 -----
+Now provides CSharp interface.
 
 ----- version 0.6.5-1 -----
 Version bump.
