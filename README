@@ -34,18 +34,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libidn-0.6.14-X-src.tar.bz2
+  unpack libidn-1.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libidn-0.6.14-X.cygport all
+  cygport ./libidn-1.0-X.cygport all
 
 This will create:
-  /usr/src/libidn-0.6.14-X-src.tar.bz2
-  /usr/src/libidn-0.6.14-X.tar.bz2
-  /usr/src/libidn-devel-0.6.14-X.tar.bz2
-  /usr/src/libidn-doc-0.6.14-X.tar.bz2
-  /usr/src/libidn11-0.6.14-X.tar.bz2
+  /usr/src/libidn-1.0-X-src.tar.bz2
+  /usr/src/libidn-1.0-X.tar.bz2
+  /usr/src/libidn-devel-1.0-X.tar.bz2
+  /usr/src/libidn-doc-1.0-X.tar.bz2
+  /usr/src/libidn11-1.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -54,18 +54,18 @@ Files included in the binary packages:
 (libidn)
   /etc/postinstall/libidn.sh
   /usr/bin/idn.exe
-  /usr/share/doc/Cygwin/libidn-0.6.14.README
-  /usr/share/doc/libidn-0.6.14/ABOUT-NLS
-  /usr/share/doc/libidn-0.6.14/AUTHORS
-  /usr/share/doc/libidn-0.6.14/ChangeLog
-  /usr/share/doc/libidn-0.6.14/COPYING
-  /usr/share/doc/libidn-0.6.14/COPYING.LIB
-  /usr/share/doc/libidn-0.6.14/FAQ
-  /usr/share/doc/libidn-0.6.14/INSTALL
-  /usr/share/doc/libidn-0.6.14/NEWS
-  /usr/share/doc/libidn-0.6.14/README
-  /usr/share/doc/libidn-0.6.14/THANKS
-  /usr/share/doc/libidn-0.6.14/TODO
+  /usr/share/doc/Cygwin/libidn-1.0.README
+  /usr/share/doc/libidn-1.0/ABOUT-NLS
+  /usr/share/doc/libidn-1.0/AUTHORS
+  /usr/share/doc/libidn-1.0/ChangeLog
+  /usr/share/doc/libidn-1.0/COPYING
+  /usr/share/doc/libidn-1.0/COPYING.LIB
+  /usr/share/doc/libidn-1.0/FAQ
+  /usr/share/doc/libidn-1.0/INSTALL
+  /usr/share/doc/libidn-1.0/NEWS
+  /usr/share/doc/libidn-1.0/README
+  /usr/share/doc/libidn-1.0/THANKS
+  /usr/share/doc/libidn-1.0/TODO
   /usr/share/emacs/site-lisp/idna.el
   /usr/share/emacs/site-lisp/idna.elc
   /usr/share/emacs/site-lisp/punycode.el
@@ -108,29 +108,29 @@ Files included in the binary packages:
   /usr/lib/pkgconfig/libidn.pc
 
 (libidn-doc)
-  /usr/share/doc/libidn-0.6.14/html/annotated.html
-  /usr/share/doc/libidn-0.6.14/html/dirs.html
-  /usr/share/doc/libidn-0.6.14/html/dir_000000.html
-  /usr/share/doc/libidn-0.6.14/html/doxygen.css
-  /usr/share/doc/libidn-0.6.14/html/doxygen.png
-  /usr/share/doc/libidn-0.6.14/html/files.html
-  /usr/share/doc/libidn-0.6.14/html/functions.html
-  /usr/share/doc/libidn-0.6.14/html/functions_vars.html
-  /usr/share/doc/libidn-0.6.14/html/globals.html
-  /usr/share/doc/libidn-0.6.14/html/globals_defs.html
-  /usr/share/doc/libidn-0.6.14/html/globals_enum.html
-  /usr/share/doc/libidn-0.6.14/html/globals_eval.html
-  /usr/share/doc/libidn-0.6.14/html/globals_func.html
-  /usr/share/doc/libidn-0.6.14/html/globals_type.html
-  /usr/share/doc/libidn-0.6.14/html/globals_vars.html
-  /usr/share/doc/libidn-0.6.14/html/idn-int_8h-source.html
-  /usr/share/doc/libidn-0.6.14/html/idn-int_8h.html
-  /usr/share/doc/libidn-0.6.14/html/index.html
-  /usr/share/doc/libidn-0.6.14/html/stringprep_8h-source.html
-  /usr/share/doc/libidn-0.6.14/html/stringprep_8h.html
-  /usr/share/doc/libidn-0.6.14/html/structStringprep__profiles.html
-  /usr/share/doc/libidn-0.6.14/html/structStringprep__table.html
-  /usr/share/doc/libidn-0.6.14/html/structStringprep__table__element.html
+  /usr/share/doc/libidn-1.0/html/annotated.html
+  /usr/share/doc/libidn-1.0/html/dirs.html
+  /usr/share/doc/libidn-1.0/html/dir_000000.html
+  /usr/share/doc/libidn-1.0/html/doxygen.css
+  /usr/share/doc/libidn-1.0/html/doxygen.png
+  /usr/share/doc/libidn-1.0/html/files.html
+  /usr/share/doc/libidn-1.0/html/functions.html
+  /usr/share/doc/libidn-1.0/html/functions_vars.html
+  /usr/share/doc/libidn-1.0/html/globals.html
+  /usr/share/doc/libidn-1.0/html/globals_defs.html
+  /usr/share/doc/libidn-1.0/html/globals_enum.html
+  /usr/share/doc/libidn-1.0/html/globals_eval.html
+  /usr/share/doc/libidn-1.0/html/globals_func.html
+  /usr/share/doc/libidn-1.0/html/globals_type.html
+  /usr/share/doc/libidn-1.0/html/globals_vars.html
+  /usr/share/doc/libidn-1.0/html/idn-int_8h-source.html
+  /usr/share/doc/libidn-1.0/html/idn-int_8h.html
+  /usr/share/doc/libidn-1.0/html/index.html
+  /usr/share/doc/libidn-1.0/html/stringprep_8h-source.html
+  /usr/share/doc/libidn-1.0/html/stringprep_8h.html
+  /usr/share/doc/libidn-1.0/html/structStringprep__profiles.html
+  /usr/share/doc/libidn-1.0/html/structStringprep__table.html
+  /usr/share/doc/libidn-1.0/html/structStringprep__table__element.html
   /usr/share/man/man3/idna_strerror.3.gz
   /usr/share/man/man3/idna_to_ascii_4i.3.gz
   /usr/share/man/man3/idna_to_ascii_4z.3.gz
@@ -181,6 +181,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 1.0-1 -----
+Version bump.
 
 ----- version 0.6.14-1 -----
 Version bump.
