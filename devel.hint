@@ -1,5 +1,5 @@
 category: Libs
-requires: cygwin libiconv
+requires: cygwin libidn11 libiconv
 external-source: libidn
 sdesc: "Internationalized domain name library (development)"
 ldesc: "Libidn is a package for internationalized string handling

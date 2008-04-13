@@ -1,0 +1,55 @@
+inherit java # emacs
+
+DESCRIPTION="International Domain Name library"
+HOMEPAGE="http://www.gnu.org/software/libidn/"
+SRC_URI="ftp://alpha.gnu.org/pub/gnu/${PN}/${P}.tar.gz \
+	ftp://alpha.gnu.org/pub/gnu/${PN}/${P}.tar.gz.sig"
+
+abi=11
+PKG_NAMES="${PN} ${PN}${abi} ${PN}-devel ${PN}-doc ${PN}-sharp java-${PN}"
+PKG_HINTS="setup runtime devel doc csharp java"
+PKG_CONTENTS[0]="--exclude=html etc/ usr/bin/*.exe usr/share/doc/ usr/share/emacs/
+                 usr/share/info/ usr/share/locale/ usr/share/man/man1/"
+PKG_CONTENTS[1]="usr/bin/cygidn-${abi}.dll"
+PKG_CONTENTS[2]='usr/include/ usr/lib/lib* usr/lib/pkgconfig/'
+PKG_CONTENTS[3]="usr/share/doc/${P}/html/ usr/share/man/man3/"
+PKG_CONTENTS[4]='usr/lib/mono/'
+PKG_CONTENTS[5]='usr/share/java/ usr/share/javadoc/'
+
+DIFF_EXCLUDES="config.rpath m4"
+
+src_compile() {
+	cd ${S}
+	NO_AUTOPOINT=1 cygautoreconf
+	cd ${B}
+	cygconf --enable-java
+	cygmake
+
+	if check_prog doxygen
+	then
+		cd ${B}/contrib/doxygen
+		doxygen
+	fi
+}
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+#	emacs_compile
+
+	if [ -f ${D}/usr/lib/Libidn.dll ]
+	then
+		dodir /usr/lib/mono/libidn
+		mv ${D}/usr/lib/Libidn.dll ${D}/usr/lib/mono/libidn/
+	fi
+
+	if [ -d ${B}/contrib/doxygen/html ]
+	then
+		docinto html
+		dodoc ${B}/contrib/doxygen/html/*
+	fi
+
+	dodir /usr/share/javadoc/${PN}
+	cp -r ${S}/doc/java/[a-z]* ${D}/usr/share/javadoc/${PN}/
+}

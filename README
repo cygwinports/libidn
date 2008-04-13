@@ -4,28 +4,27 @@ Libidn is a package for internationalized string handling
 based on the Stringprep, Punycode and IDNA specifications.
 
 Runtime requirements:
-  cygwin-1.5.24-2
+  cygwin-1.5.25-7
   libiconv2-1.11-1
   libintl8-0.15-1
 (java-libidn)
   classpath-0.93-1
   jamvm-1.4.5-1
 (libidn-sharp)
-  mono-1.2.5-1
+  mono-1.2.6-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
   autoconf2.5-2.61-1
   automake1.10-1.10-1
   binutils-20060817-1
-  cygport-0.3.7-1
+  cygport-0.3.9-1
   doxygen-1.5.1-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
-  libtool1.5-1.5.23a-2
+  libtool-2.2.2-2
   make-3.81-1
-  perl-5.8.8-4
+  perl-5.10.0-3
   sed-4.1.5-2
 
 Canonical homepage:
@@ -37,20 +36,20 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libidn-1.3-X-src.tar.bz2
+  unpack libidn-1.7-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libidn-1.3-X.cygport all
+  cygport ./libidn-1.7-X.cygport all
 
 This will create:
-  /usr/src/java-libidn-1.3-X.tar.bz2
-  /usr/src/libidn-1.3-X-src.tar.bz2
-  /usr/src/libidn-1.3-X.tar.bz2
-  /usr/src/libidn-devel-1.3-X.tar.bz2
-  /usr/src/libidn-doc-1.3-X.tar.bz2
-  /usr/src/libidn11-1.3-X.tar.bz2
-  /usr/src/libidn-sharp-1.3-X.tar.bz2
+  /usr/src/java-libidn-1.7-X.tar.bz2
+  /usr/src/libidn-1.7-X-src.tar.bz2
+  /usr/src/libidn-1.7-X.tar.bz2
+  /usr/src/libidn-devel-1.7-X.tar.bz2
+  /usr/src/libidn-doc-1.7-X.tar.bz2
+  /usr/src/libidn11-1.7-X.tar.bz2
+  /usr/src/libidn-sharp-1.7-X.tar.bz2
 
 -------------------------------------------
 
@@ -59,22 +58,20 @@ Files included in the binary packages:
 (libidn)
   /etc/postinstall/libidn.sh
   /usr/bin/idn.exe
-  /usr/share/doc/Cygwin/libidn-1.3.README
-  /usr/share/doc/libidn-1.3/ABOUT-NLS
-  /usr/share/doc/libidn-1.3/AUTHORS
-  /usr/share/doc/libidn-1.3/ChangeLog
-  /usr/share/doc/libidn-1.3/COPYING
-  /usr/share/doc/libidn-1.3/COPYING.LIB
-  /usr/share/doc/libidn-1.3/FAQ
-  /usr/share/doc/libidn-1.3/INSTALL
-  /usr/share/doc/libidn-1.3/NEWS
-  /usr/share/doc/libidn-1.3/README
-  /usr/share/doc/libidn-1.3/THANKS
-  /usr/share/doc/libidn-1.3/TODO
+  /usr/share/doc/Cygwin/libidn-1.7.README
+  /usr/share/doc/libidn-1.7/ABOUT-NLS
+  /usr/share/doc/libidn-1.7/AUTHORS
+  /usr/share/doc/libidn-1.7/ChangeLog
+  /usr/share/doc/libidn-1.7/COPYING
+  /usr/share/doc/libidn-1.7/COPYING.LIB
+  /usr/share/doc/libidn-1.7/FAQ
+  /usr/share/doc/libidn-1.7/INSTALL
+  /usr/share/doc/libidn-1.7/NEWS
+  /usr/share/doc/libidn-1.7/README
+  /usr/share/doc/libidn-1.7/THANKS
+  /usr/share/doc/libidn-1.7/TODO
   /usr/share/emacs/site-lisp/idna.el
-  /usr/share/emacs/site-lisp/idna.elc
   /usr/share/emacs/site-lisp/punycode.el
-  /usr/share/emacs/site-lisp/punycode.elc
   /usr/share/info/libidn.info.gz
   /usr/share/locale/da/LC_MESSAGES/libidn.mo
   /usr/share/locale/de/LC_MESSAGES/libidn.mo
@@ -100,7 +97,7 @@ Files included in the binary packages:
   /usr/lib/mono/libidn/Libidn.dll
 
 (java-libidn)
-  /usr/share/java/libidn-1.3.jar
+  /usr/share/java/libidn-1.7.jar
   /usr/share/java/libidn.jar
   /usr/share/javadoc/libidn/about.html
   /usr/share/javadoc/libidn/alphaindex.html
@@ -142,29 +139,29 @@ Files included in the binary packages:
   /usr/lib/pkgconfig/libidn.pc
 
 (libidn-doc)
-  /usr/share/doc/libidn-1.3/html/annotated.html
-  /usr/share/doc/libidn-1.3/html/dirs.html
-  /usr/share/doc/libidn-1.3/html/dir_000000.html
-  /usr/share/doc/libidn-1.3/html/doxygen.css
-  /usr/share/doc/libidn-1.3/html/doxygen.png
-  /usr/share/doc/libidn-1.3/html/files.html
-  /usr/share/doc/libidn-1.3/html/functions.html
-  /usr/share/doc/libidn-1.3/html/functions_vars.html
-  /usr/share/doc/libidn-1.3/html/globals.html
-  /usr/share/doc/libidn-1.3/html/globals_defs.html
-  /usr/share/doc/libidn-1.3/html/globals_enum.html
-  /usr/share/doc/libidn-1.3/html/globals_eval.html
-  /usr/share/doc/libidn-1.3/html/globals_func.html
-  /usr/share/doc/libidn-1.3/html/globals_type.html
-  /usr/share/doc/libidn-1.3/html/globals_vars.html
-  /usr/share/doc/libidn-1.3/html/idn-int_8h-source.html
-  /usr/share/doc/libidn-1.3/html/idn-int_8h.html
-  /usr/share/doc/libidn-1.3/html/index.html
-  /usr/share/doc/libidn-1.3/html/stringprep_8h-source.html
-  /usr/share/doc/libidn-1.3/html/stringprep_8h.html
-  /usr/share/doc/libidn-1.3/html/structStringprep__profiles.html
-  /usr/share/doc/libidn-1.3/html/structStringprep__table.html
-  /usr/share/doc/libidn-1.3/html/structStringprep__table__element.html
+  /usr/share/doc/libidn-1.7/html/annotated.html
+  /usr/share/doc/libidn-1.7/html/dirs.html
+  /usr/share/doc/libidn-1.7/html/dir_000000.html
+  /usr/share/doc/libidn-1.7/html/doxygen.css
+  /usr/share/doc/libidn-1.7/html/doxygen.png
+  /usr/share/doc/libidn-1.7/html/files.html
+  /usr/share/doc/libidn-1.7/html/functions.html
+  /usr/share/doc/libidn-1.7/html/functions_vars.html
+  /usr/share/doc/libidn-1.7/html/globals.html
+  /usr/share/doc/libidn-1.7/html/globals_defs.html
+  /usr/share/doc/libidn-1.7/html/globals_enum.html
+  /usr/share/doc/libidn-1.7/html/globals_eval.html
+  /usr/share/doc/libidn-1.7/html/globals_func.html
+  /usr/share/doc/libidn-1.7/html/globals_type.html
+  /usr/share/doc/libidn-1.7/html/globals_vars.html
+  /usr/share/doc/libidn-1.7/html/idn-int_8h-source.html
+  /usr/share/doc/libidn-1.7/html/idn-int_8h.html
+  /usr/share/doc/libidn-1.7/html/index.html
+  /usr/share/doc/libidn-1.7/html/stringprep_8h-source.html
+  /usr/share/doc/libidn-1.7/html/stringprep_8h.html
+  /usr/share/doc/libidn-1.7/html/structStringprep__profiles.html
+  /usr/share/doc/libidn-1.7/html/structStringprep__table.html
+  /usr/share/doc/libidn-1.7/html/structStringprep__table__element.html
   /usr/share/man/man3/idna_strerror.3.gz
   /usr/share/man/man3/idna_to_ascii_4i.3.gz
   /usr/share/man/man3/idna_to_ascii_4z.3.gz
@@ -215,6 +212,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 1.7-1 -----
+Version bump.
 
 ----- version 1.3-1 -----
 Version bump.
