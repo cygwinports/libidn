@@ -1,5 +1,5 @@
 category: Java
-requires: cygwin classpath jamvm
+requires: classpath jamvm
 external-source: libidn
 sdesc: "Internationalized domain name library (Java interface)"
 ldesc: "Libidn is a package for internationalized string handling
