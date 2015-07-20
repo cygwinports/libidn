@@ -1,0 +1,89 @@
+NAME="libidn"
+VERSION=1.29
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="International Domain Name library"
+DESCRIPTION="An implementation of the Stringprep, Punycode and IDNA specifications defined
+by the IETF Internationalized Domain Names (IDN) working group."
+HOMEPAGE="http://www.gnu.org/software/libidn/"
+SRC_URI="http://ftp.gnu.org/gnu/libidn/libidn-${VERSION}.tar.gz \
+         http://ftp.gnu.org/gnu/libidn/libidn-${VERSION}.tar.gz.sig"
+PATCH_URI="1.26-vpath.patch"
+
+# Build dependencies only
+DEPEND="doxygen"
+
+PKG_NAMES="${NAME} ${NAME}11 ${NAME}-devel ${NAME}-doc"
+libidn_CATEGORY="Net"
+libidn_SUMMARY="${SUMMARY} (utilities)"
+libidn_CONTENTS="
+  --exclude=html
+  usr/bin/*.exe
+  usr/share/doc/
+  usr/share/emacs/
+  usr/share/info/
+  usr/share/locale/
+  usr/share/man/man1/
+"
+libidn11_SUMMARY="${SUMMARY} (runtime)"
+libidn11_CONTENTS="
+  usr/bin/cygidn-11.dll
+"
+libidn_devel_CATEGORY="Devel ${CATEGORY}"
+libidn_devel_SUMMARY="${SUMMARY} (development)"
+libidn_devel_CONTENTS="
+  usr/include/
+  usr/lib/lib*
+  usr/lib/pkgconfig/
+  usr/share/man/man3/
+"
+libidn_doc_CATEGORY="Doc ${CATEGORY}"
+libidn_doc_SUMMARY="${SUMMARY} (documentation)"
+libidn_doc_CONTENTS="
+  usr/share/doc/${PN}/html/
+"
+
+
+DIFF_EXCLUDES="*.m4 Doxyfile.in.orig"
+
+MAKEOPTS="-j1"
+
+KEEP_LA_FILES=none
+
+
+src_compile() {
+	cd ${S}
+	cygautoreconf
+	cd ${B}
+	cygconf
+	cygmake
+
+	if check_prog doxygen
+	then
+		cd ${B}/contrib/doxygen
+		doxygen -u
+		doxygen
+	fi
+}
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	if [ -d ${B}/contrib/doxygen/html ]
+	then
+		docinto html
+		dodoc ${B}/contrib/doxygen/html/*
+	fi
+
+	cd ${S}
+	docinto contrib
+	dodoc contrib/web/idn.php
+
+	docinto examples
+	dodoc examples/*.c examples/README
+
+	rm ${D}/usr/bin/*.def
+}
+
+DOCS="doc/libidn.pdf doc/libidn-components.png doc/libidn.html"

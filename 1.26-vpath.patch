@@ -1,15 +1,15 @@
---- origsrc/libidn-1.7/contrib/doxygen/Doxyfile.in	2008-02-19 10:53:35.000000000 -0600
-+++ src/libidn-1.7/contrib/doxygen/Doxyfile.in	2008-04-13 16:21:57.812500000 -0500
-@@ -459,7 +459,7 @@
+--- origsrc/libidn-1.26/contrib/doxygen/Doxyfile.in	2012-04-27 10:18:42.000000000 +0200
++++ src/libidn-1.26/contrib/doxygen/Doxyfile.in	2013-04-05 10:32:37.767530700 +0200
+@@ -534,7 +534,7 @@ WARN_LOGFILE           =
  # directories like "/usr/src/myproject". Separate the files or directories 
  # with spaces.
  
 -INPUT                  = ../../lib
 +INPUT                  = @top_srcdir@/lib
  
- # If the value of the INPUT tag contains directories, you can use the 
- # FILE_PATTERNS tag to specify one or more wildcard pattern (like *.cpp 
-@@ -500,7 +500,7 @@
+ # This tag can be used to specify the character encoding of the source files 
+ # that doxygen parses. Internally doxygen uses the UTF-8 encoding, which is 
+@@ -591,7 +591,7 @@ EXCLUDE_SYMBOLS        =
  # directories that contain example code fragments that are included (see 
  # the \include command).
  
@@ -18,7 +18,7 @@
  
  # If the value of the EXAMPLE_PATH tag contains directories, you can use the 
  # EXAMPLE_PATTERNS tag to specify one or more wildcard pattern (like *.cpp 
-@@ -530,7 +530,7 @@
+@@ -621,7 +621,7 @@ IMAGE_PATH             =
  # to standard output.  If FILTER_PATTERNS is specified, this tag will be 
  # ignored.
  

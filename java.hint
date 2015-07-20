@@ -1,6 +1,0 @@
-category: Java
-requires: classpath jamvm
-external-source: libidn
-sdesc: "Internationalized domain name library (Java interface)"
-ldesc: "Libidn is a package for internationalized string handling
-based on the Stringprep, Punycode and IDNA specifications."
