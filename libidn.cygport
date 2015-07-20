@@ -1,13 +1,13 @@
 NAME="libidn"
-VERSION=1.29
+VERSION=1.31
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="International Domain Name library"
 DESCRIPTION="An implementation of the Stringprep, Punycode and IDNA specifications defined
 by the IETF Internationalized Domain Names (IDN) working group."
 HOMEPAGE="http://www.gnu.org/software/libidn/"
-SRC_URI="http://ftp.gnu.org/gnu/libidn/libidn-${VERSION}.tar.gz \
-         http://ftp.gnu.org/gnu/libidn/libidn-${VERSION}.tar.gz.sig"
+SRC_URI="mirror://gnu/libidn/libidn-${VERSION}.tar.gz \
+         mirror://gnu/libidn/libidn-${VERSION}.tar.gz.sig"
 PATCH_URI="1.26-vpath.patch"
 
 # Build dependencies only
