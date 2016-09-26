@@ -1,5 +1,5 @@
 NAME="libidn"
-VERSION=1.31
+VERSION=1.33
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="International Domain Name library"
